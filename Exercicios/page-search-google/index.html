@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center; 
+            text-align: center;
+            align-items: center;
+        }
+
+        div{     
+            width: 40%;
+            height: 40%;         
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);     
+        }
+
+        input{
+            padding: 10px;
+            margin: 20px;
+        }
+
+        #txt{
+            width: 80%;
+            border-radius: 20px;
+            border: none;
+            font-size: 15px;
+            background-color: rgba(240, 239, 239, 0.364);
+        }
+
+        .botao{
+            border: none;
+            border-radius: 4px;
+            background-color: #F8F9FA;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(48, 46, 46);
+        }
+
+        .botao:hover{
+           box-shadow: 0px 0px 1px gray;
+        }
+
+        header{
+            display: flex;
+            justify-content:flex-end;
+            margin: 1px;
+        }
+
+        a{
+            color: rgb(48, 46, 46);
+            text-decoration: none;
+        }
+
+        ul{
+            text-decoration: none;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="">Pesquisa de Imagens</a> <a href="">Pesquisa Avançada</a></li> 
+        </ul> 
+        
+            
+    </header>
+    <div class="container">
+        <div>
+            <img src="./imgs/logo.png" alt="Logo Search">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q" id="txt" placeholder="Pesquise no Google">
+                <input type="submit" value="Google Search" class="botao">
+                <input type="submit" value="Estou com Sorte" class="botao">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
